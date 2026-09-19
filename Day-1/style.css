@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+body {
+  height: 100vh;
+  background-color: #e7e7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid #c4c4c5;
+  box-shadow: 0 0 2rem #9da0a385;
+}
+
+#header {
+  margin-bottom: 1rem;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+#header .avatar img {
+  border-radius: 50%;
+}
+#header p {
+  background-color: #00bb5a34;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  color: #24965b;
+  padding: 0.5rem 1rem;
+}
+
+#main .name p {
+  color: #17202b;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+#main .name span {
+  display: block;
+  color: #617084;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#main .about {
+  margin-bottom: 1rem;
+}
+
+#main .about p {
+  width: 70%;
+  color: #617084;
+  line-height: 1.4;
+}
+
+#main .place {
+  margin-bottom: 2rem;
+}
+
+#main .place p {
+  font-size: 0.9rem;
+  color: #697485;
+}
+.line {
+  border: 0.01rem solid #cecaca;
+  margin-bottom: 2rem;
+}
+
+#main .skilles p {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+#main .skilles .stack {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#main .skilles .stack span {
+  background-color: #eef1f4;
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+  color: #465367;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#main .contact .links {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.links .link img {
+  width: 40px;
+  margin-bottom: 0.2rem;
+}
+.links .link p {
+  font-size: 0.9rem;
+  color: #465367;
+  text-align: center;
+}
+.ect {
+  display: flex;
+  gap: 1rem;
+}
+.ect .button1 {
+  flex-grow: 1;
+  padding: 0.9rem 0.6rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: white;
+  background-color: #17202b;
+  cursor: pointer;
+}
+
+.ect .btn2 {
+  flex-grow: 1;
+  padding: 0.9rem 0.6rem;
+  border-radius: 0.4rem;
+  border: none;
+  color: #465367;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+@media (max-width: 425px) {
+  #main .skilles .stack span {
+    padding: 0.5rem;
+  }
+}
