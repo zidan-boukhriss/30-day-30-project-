@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <!-- simple header -->
+      <header class="header">
+        <div class="logo">Quote Generator</div>
+      </header>
+
+      <main class="main">
+        <!-- intro / label -->
+        <div class="intro">
+          <div class="intro-label">daily inspiration</div>
+          <h1 class="intro-title">Random Quote Generator</h1>
+          <p class="intro-description">
+            A curated collection of timeless wisdom. Click for a new
+            perspective.
+          </p>
+        </div>
+
+        <!-- quote card -->
+        <div class="quote-card" id="quoteCard">
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <div class="quote-text" id="quoteText">
+            Success is not final, failure is not fatal.
+          </div>
+
+          <!-- author row: image placeholder + author name -->
+          <div class="quote-author-row">
+            <div class="quote-author" id="quoteAuthor">Winston Churchill</div>
+          </div>
+        </div>
+
+        <!-- primary actions -->
+        <div class="actions">
+          <button class="btn btn-primary" id="newQuoteBtn">New Quote</button>
+          <button class="btn btn-secondary" id="copyQuoteBtn">
+            Copy Quote
+          </button>
+          <button id="speechBtn" class="btn btn-secondary">Speech</button>
+        </div>
+      </main>
+    </div>
+
+    <!-- toast message for copy feedback -->
+    <div class="toast" id="toast">Quote copied to clipboard</div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
